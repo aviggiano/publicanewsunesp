@@ -14,21 +14,18 @@ export default function Index() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                Notus NextJS - A beautiful extension for Tailwind CSS.
+                Publica News
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                Notus NextJS is Free and Open Source. It does not change any of
-                the CSS from{" "}
-                <a
-                  href="https://tailwindcss.com/?ref=creativetim"
-                  className="text-blueGray-600"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tailwind CSS
-                </a>
-                . It features multiple HTML elements and it comes with dynamic
-                components for ReactJS, Vue and Angular.
+                Projetos de intervenção desenvolvidos por alunos de administração pública. 
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                Publica News é um espaco para divulgação dos projetos de intervenção idealizado na disciplina de estado governo e administração.
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                Espaço para compartilhar experiencias e projetos entre os alunos de administração pública.
               </p>
               <div className="mt-12">
                 <a
@@ -36,14 +33,14 @@ export default function Index() {
                   target="_blank"
                   className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 >
-                  Get started
+                  Participar
                 </a>
                 <a
                   href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
                   className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                   target="_blank"
                 >
-                  Github Star
+                  Envie o seu projeto
                 </a>
               </div>
             </div>
