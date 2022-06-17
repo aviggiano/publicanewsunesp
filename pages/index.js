@@ -17,7 +17,7 @@ export default function Index() {
                 Publica News
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                Publica News é um espaco para divulgação dos projetos de intervenção idealizado na disciplina de estado governo e administração.
+                Publica News é um espaco para divulgação dos projetos de intervenção idealizado na disciplina Estado Governo e Administração da Unesp.
               </p>
               <div className="mt-12">
                 <a
@@ -70,7 +70,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="w-full md:w-12/12 px-4">
+            <div className="w-full md:w-6/12 px-4">
                 <div className="w-full md:w-12/12 px-4">
                   <div className="relative flex flex-col mt-4">
                     <div className="px-4 py-5 flex-auto">
@@ -81,7 +81,7 @@ export default function Index() {
                         Apresentação
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                      Publica News foi desenvolvido pelo professor josé Luis Bizelli do Departamento de Antropologia, Política e Filosofia, durante a disciplina "Estado, Governo e Administração". A intencao é aproximar os alunos do primeiro ano de administracao publica das demandas sociais do municipio de araraquara através de um projeto de intervencao que deverá "resolver um problema". Para isso, todos os anos sao organizados grupos entre os estudantes da disciplina, onde no primeiro semestre é voltado para idealizacao do projeto e no segundo é colocado em pratica. 
+                      Publica News foi desenvolvido pelo professor José Luis Bizelli, do departamento de Antropologia, Política e Filosofia, durante a disciplina "Estado, Governo e Administração". A intencao é aproximar os alunos do primeiro ano de Administração Publica das demandas sociais do município de Araraquara através de um projeto de intervenção que deve "resolver um problema". Para isso, todos os anos, são organizados grupos entre os estudantes da disciplina, em que o primeiro semestre é voltado para idealização do projeto e o segundo é voltado para a prática. 
                       </p>
                     </div>
                   </div>
@@ -97,80 +97,28 @@ export default function Index() {
                 <i className="fas fa-sitemap text-xl"></i>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                CSS Components
+                Histórico
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                Every element that you need in a product comes built in as a
-                component. All components fit perfectly with each other and can
-                have different colours.
+                Publica News foi criado em xxxx, idealizado pelo professor José Luis Bizelli, inicialmente como um projeto de disciplina, e que ganhou este nome após uma ex-aluna realizar a criação de um site onde os projetos pudessem ser compartilhados entre os colegas. 
               </p>
-              <div className="block pb-6">
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Buttons
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Inputs
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Labels
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Menus
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Navbars
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Pagination
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Progressbars
-                </span>
-                <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
-                  Typography
-                </span>
-              </div>
+              
               <a
-                href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
+                href="https://airtable.com/shrtyxMf2u80BwVx5"
                 target="_blank"
                 className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
               >
-                View All{" "}
+                Explorar{" "}
                 <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
               </a>
             </div>
 
-            <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
+            <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
               <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
                 <img
-                  alt="..."
-                  src="/img/component-btn.png"
-                  className="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-profile-card.png"
-                  className="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-info-card.png"
-                  className="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-info-2.png"
-                  className="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-menu.png"
-                  className="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
-                />
-                <img
-                  alt="..."
-                  src="/img/component-btn-pink.png"
-                  className="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
+                  alt="Crianças brincando"
+                  src="https://images.unsplash.com/photo-1444840535719-195841cb6e2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                  className="w-full align-middle rounded absolute shadow-lg -top-150-px z-3"
                 />
               </div>
             </div>
