@@ -83,9 +83,9 @@ export default function Index() {
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                         <i className="fas fa-book-open"></i>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
+                      <h3 id="apresentacao" className="text-3xl mb-2 font-semibold leading-normal">
                         Apresentação
-                      </h6>
+                      </h3>
                       <p className="mb-4 text-blueGray-500">
                       Publica News foi desenvolvido pelo professor José Luis Bizelli, do departamento de Antropologia, Política e Filosofia, durante a disciplina "Estado, Governo e Administração". A intencao é aproximar os alunos do primeiro ano de Administração Publica das demandas sociais do município de Araraquara através de um projeto de intervenção que deve "resolver um problema". Para isso, todos os anos, são organizados grupos entre os estudantes da disciplina, em que o primeiro semestre é voltado para idealização do projeto e o segundo é voltado para a prática. 
                       </p>
@@ -100,12 +100,12 @@ export default function Index() {
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                <i className="fas fa-sitemap text-xl"></i>
+                <i className="fas fa-landmark text-xl"></i>
               </div>
-              <h3 className="text-3xl mb-2 font-semibold leading-normal">
+              <h3 id="historico" className="text-3xl mb-2 font-semibold leading-normal">
                 Histórico
               </h3>
-              <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+              <p className="mb-4 text-blueGray-500">
                 Publica News foi criado em xxxx, idealizado pelo professor José Luis Bizelli, inicialmente como um projeto de disciplina, e que ganhou este nome após uma ex-aluna realizar a criação de um site onde os projetos pudessem ser compartilhados entre os colegas. 
               </p>
               
