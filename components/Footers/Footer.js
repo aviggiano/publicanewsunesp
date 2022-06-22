@@ -31,7 +31,7 @@ export default function Footer() {
                 Envie uma mensagem para nós ou contribua para o site.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
-                <a href="mailto:publicanewsunesp@gmail.com" target="_blank" noreferrer rel="noreferrer">
+                <a href="mailto:publicanewsunesp@gmail.com" target="_blank" rel="noreferrer">
                   <button
                     className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                     type="button"
@@ -39,7 +39,7 @@ export default function Footer() {
                     <i className="fas fa-envelope"></i>
                 </button>
                 </a>
-                <a href="https://github.com/aviggiano/publicanewsunesp" target="_blank" noreferrer rel="noreferrer">
+                <a href="https://github.com/aviggiano/publicanewsunesp" target="_blank" rel="noreferrer">
                   <button
                     className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                     type="button"

@@ -154,10 +154,10 @@ export default function Index({projects}) {
                         {project.title}
                       </h5>
                       <Link href={project.href}>
-                        <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                        <div className="hover:-mt-4 cursor-pointer relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                           <img
                             alt="..."
-                            className="align-middle border-none max-w-full h-auto rounded-lg"
+                            className="align-middle border-none max-w-full h-auto rounded-lg  "
                             src={project.img}
                           />
                         </div>
