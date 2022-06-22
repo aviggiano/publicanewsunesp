@@ -7,6 +7,7 @@ import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
 const items = [
   {title: 'Apresentação', href:'#apresentacao'},
   {title: 'Histórico', href:'#historico'},
+  {title: 'Idealizadores', href:'#idealizadores'},
 ]
 
 export default function Navbar(props) {

@@ -5,6 +5,11 @@ import Link from "next/link";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
+const people = [
+  {title: "José Luis Bizelli", img:'/img/jose.png', description: "Fez Arquitetura na PUC de Campinas (1980), estudando conjuntos habitacionais na periferia da cidade. Mestrado no Programa de Pós-graduação em Sociologia da Faculdade de Ciências e Letras, Unesp de Araraquara (1990), área de concentração em Sociologia Urbana, analisando o planejamento como ferramenta do poder local para a especulação urbana. Doutorado em Sociologia, no mesmo Programa (2003), trabalhando o tema da administração gerencial e seus impactos nas estruturas administrativas locais. Fez seu estágio pós-doutoral na Universidade de Alcalá de Henares (2013), Espanha, trabalhando com questões ligadas às tecnologias educativas. É Livre Docente pela Unesp em Gestão de Políticas Públicas (2013)."},
+  {title: "Thais Vargas Bizelli", img:'/img/thais.png', description: "Formada pelo Centro Estadual de Educação Tecnológica Paula Souza como Técnica em Administração (2010). Graduada em Administração Pública (2017) pela Universidade Estadual Paulista Júlio de Mesquita Filho, Campus de Araraquara (FCLAr). Mestra pelo programa de pós-graduação em Educação Escolar da Universidade Estadual Paulista Júlio de Mesquita Filho, Campus de Araraquara (FCLAr). Doutoranda pelo programa de pós-graduação em Educação Escolar da Universidade Estadual Paulista Júlio de Mesquita Filho, Campus de Araraquara (FCLAr). Foi bolsista PIBIC-CNPQ do projeto Análise de processos inovadores no governo do território paulista (2014-2017), no qual participou como pesquisadora durante a graduação. No mestrado, foi bolsista Capes de janeiro de 2018 até a conclusão do curso (junho/2019). Realizou intercâmbio acadêmico na Univerdad Nacional del Litoral, na Argentina, como bolsista AUGM (2016). Faz parte do corpo editorial da Revista Ibero-Americana de Estudos em Educação, realizando função de revisora."}
+]
+
 const projects = [
   {title: 'Login Page', img: '/img/login.jpg', href: '/login'},
   {title: 'Profile Page', img: '/img/login.jpg', href:'/profile'},
@@ -172,43 +177,33 @@ export default function Index() {
 
       <section className="py-20 bg-blueGray-600 overflow-hidden">
         <div className="container mx-auto pb-64">
-          <div className="flex flex-wrap justify-center">
-            <div className="w-full md:w-5/12 px-12 md:px-4 ml-auto mr-auto md:mt-64">
-              <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                <i className="fas fa-code-branch text-xl"></i>
-              </div>
-              <h3 className="text-3xl mb-2 font-semibold leading-normal text-white">
-                Open Source
-              </h3>
-              <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-400">
-                Since{" "}
-                <a
-                  href="https://tailwindcss.com/?ref=creative"
-                  className="text-blueGray-300"
-                  target="_blank"
-                >
-                  Tailwind CSS
-                </a>{" "}
-                is an open source project we wanted to continue this movement
-                too. You can give this version a try to feel the design and also
-                test the quality of the code!
-              </p>
-              <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-400">
-                Get it free on Github and please help us spread the news with a
-                Star!
-              </p>
-              <a
-                href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
-                target="_blank"
-                className="github-star mt-4 inline-block text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
-              >
-                Github Star
-              </a>
-            </div>
-
-            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative">
-              <i className="fab fa-github text-blueGray-700 absolute text-55 -top-150-px -right-100 left-auto opacity-80"></i>
-            </div>
+          <div className="flex flex-col flex-wrap justify-center">
+            <h2 id="idealizadores" className="text-4xl mb-2 text-center font-semibold leading-normal text-white">
+              Idealizadores
+            </h2>
+            {
+              people.map((people) => (
+                <div className="flex flex-wrap w-full mt-12">
+                  <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-4 relative flex flex-row justify-center items-center">
+                    <img
+                      className="rounded-full w-6/12"            
+                      style={{filter:'grayscale(1)', height: 'fit-content'}}            
+                      src={people.img}           
+                      alt={people.title}           
+                    />            
+                  </div>            
+                  <div className="w-full md:w-8/12 px-12 md:px-4 ml-auto mr-auto">            
+                    <h6 className="text-2xl font-bold leading-relaxed mt-4 mb-4 text-blueGray-400">            
+                      {people.title}           
+                    </h6>            
+                    <p className="text-sm font-light leading-relaxed mt-4 mb-4 text-blueGray-400">            
+                      {people.description}           
+                    </p>            
+                  </div>            
+                </div>            
+                )
+              )
+            }
           </div>
         </div>
       </section>
