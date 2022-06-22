@@ -148,9 +148,9 @@ export default function Index({projects}) {
             <div className="w-full lg:w-12/12 px-4  -mt-24">
               <div className="flex flex-wrap">
                 {
-                  projects.map((project) => (
+                  projects.map((project, index) => (
                     <div key={project.title} className="w-full lg:w-4/12 px-4">
-                      <h5 className="text-xl font-semibold pb-4 text-center">
+                      <h5 className="text-xl font-semibold pb-4 text-center" style={{color: index > 2 ? 'white':''}}>
                         {project.title}
                       </h5>
                       <Link href={project.href}>
