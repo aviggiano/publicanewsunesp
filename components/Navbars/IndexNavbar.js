@@ -8,6 +8,7 @@ const items = [
   {title: 'Apresentação', href:'#apresentacao'},
   {title: 'Histórico', href:'#historico'},
   {title: 'Idealizadores', href:'#idealizadores'},
+  {title: 'Projetos anteriores', href:'#projetos-anteriores'},
 ]
 
 export default function Navbar(props) {
@@ -37,7 +38,7 @@ export default function Navbar(props) {
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               {
                 items.map(item => (
-                  <li className="flex items-center">
+                  <li key={item.title} className="flex items-center">
                     <a
                       className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                       href={item.href}

@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Link from "next/link";
+import {getProjects} from 'services/api'
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
@@ -10,13 +11,8 @@ const people = [
   {title: "Thais Vargas Bizelli", img:'/img/thais.png', description: "Formada pelo Centro Estadual de Educação Tecnológica Paula Souza como Técnica em Administração (2010). Graduada em Administração Pública (2017) pela Universidade Estadual Paulista Júlio de Mesquita Filho, Campus de Araraquara (FCLAr). Mestra pelo programa de pós-graduação em Educação Escolar da Universidade Estadual Paulista Júlio de Mesquita Filho, Campus de Araraquara (FCLAr). Doutoranda pelo programa de pós-graduação em Educação Escolar da Universidade Estadual Paulista Júlio de Mesquita Filho, Campus de Araraquara (FCLAr). Foi bolsista PIBIC-CNPQ do projeto Análise de processos inovadores no governo do território paulista (2014-2017), no qual participou como pesquisadora durante a graduação. No mestrado, foi bolsista Capes de janeiro de 2018 até a conclusão do curso (junho/2019). Realizou intercâmbio acadêmico na Univerdad Nacional del Litoral, na Argentina, como bolsista AUGM (2016). Faz parte do corpo editorial da Revista Ibero-Americana de Estudos em Educação, realizando função de revisora."}
 ]
 
-const projects = [
-  {title: 'Login Page', img: '/img/login.jpg', href: '/login'},
-  {title: 'Profile Page', img: '/img/login.jpg', href:'/profile'},
-  {title: 'Landing Page', img: '/img/landing.jpg', href: '/'},
-]
 
-export default function Index() {
+export default function Index({projects}) {
   return (
     <>
       <IndexNavbar fixed />
@@ -138,7 +134,7 @@ export default function Index() {
 
         <div className="justify-center text-center flex flex-wrap mt-24">
           <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl">Projetos anteriores</h2>
+            <h2 id="projetos-anteriores" className="font-semibold text-4xl">Projetos anteriores</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
               Acompanhe os projetos anteriores da disciplina Estado Governo e Administração
             </p>
@@ -153,7 +149,7 @@ export default function Index() {
               <div className="flex flex-wrap">
                 {
                   projects.map((project) => (
-                    <div className="w-full lg:w-4/12 px-4">
+                    <div key={project.title} className="w-full lg:w-4/12 px-4">
                       <h5 className="text-xl font-semibold pb-4 text-center">
                         {project.title}
                       </h5>
@@ -183,7 +179,7 @@ export default function Index() {
             </h2>
             {
               people.map((people) => (
-                <div className="flex flex-wrap w-full mt-12">
+                <div key={people.title} className="flex flex-wrap w-full mt-12">
                   <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-4 relative flex flex-row justify-center items-center">
                     <img
                       className="rounded-full w-6/12"            
@@ -232,4 +228,14 @@ export default function Index() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await getProjects()
+
+  return {
+    props: {
+      projects
+    },
+  }
 }
