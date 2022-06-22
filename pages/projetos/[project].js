@@ -14,7 +14,7 @@ export default function Profile({project}) {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                `url('${project.img}')`,
+                `url('${project ? project.img : ''}')`,
             }}
           >
             <span
@@ -48,7 +48,7 @@ export default function Profile({project}) {
               <div className="px-6">
                 <div className="text-center mt-12">
                   <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                    {project.title}
+                    {project ? project.title : ''}
                   </h3>
                   <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                     <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
@@ -59,7 +59,7 @@ export default function Profile({project}) {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-blueGray-700" style={{whiteSpace: 'pre-line'}}>
-                        {project.description}
+                        {project ? project.description : ''}
                       </p>
                     </div>
                   </div>
